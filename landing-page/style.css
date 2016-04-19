@@ -1,2 +1,146 @@
-/* Reset */
-body, html {margin: 0;padding: 0}
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+body {
+	margin: 64px 0 0 0;
+	font-family: "Open Sans", sans-serif;
+}
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.container.inner {
+	width: 90%;
+	max-width: 960px;
+}
+
+header {
+	position: fixed;
+	height: 64px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #FFF;
+	border-bottom: 1px solid #AAA;
+}
+header .container { display: table; height: 100% }
+header .container .logo-wrap { display: table-cell; vertical-align: middle }
+header .container .logo-wrap .logo-text { font-weight: 700; }
+
+a.button {
+	display: inline-block;
+	padding: 16px;
+	margin: 0 auto;
+	background: #DDD;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+section {
+	width: 100%;
+	float: none;
+}
+section .container {
+	display: table;
+	margin: 0 auto;
+}
+section .container .section-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+section .container .section-content > *:first-child { margin-top: 0; }
+section#leader {
+	background: #EEE;
+	padding: 64px 0;
+}
+section#leader .container .section-content h1 { font-size: 32px; }
+section#leader .container .section-content p { font-size: 16px; }
+section#leader .container .section-content a.button {
+	font-size: 18px;
+	padding: 16px 32px;
+}
+section#subject-tiles {
+	background: #CCC;
+	padding-bottom: 24px;
+}
+section#subject-tiles .container .section-content > h1 {
+	text-align: center;
+	margin: 16px 0;
+	font-weight: 400;
+}
+section#subject-tiles .container .section-content .tile-wrap {
+	display: table;
+	width: 100%;
+	border-spacing: 12px;
+}
+section#subject-tiles .container .section-content .tile-wrap .tile-row {
+	display: table-row;
+	width: 100%;
+}
+section#subject-tiles .container .section-content .tile-wrap .tile-row .tile {
+	display: table-cell;
+	vertical-align: middle;
+	height: 160px;
+	background: #BBB;
+	width: 33%;
+	font-size: 32px;
+	font-weight: 700;
+	cursor: pointer;
+}
+section#subject-tiles .container .section-content a.button {
+	font-size: 18px;
+}
+section#subject-tiles .container .section-content .underbutton {
+	display: inline-block;
+	margin-top: 8px;
+}
+footer {
+	width: 100%;
+	float: left;
+}
+footer .footer-content,
+footer .afterfooter {
+	width: 100%;
+	float: left;
+}
+footer .footer-content {
+	background: #BBB;
+}
+footer .footer-content .container {
+	display: table;
+	width: 100%;
+}
+footer .footer-content .container section {
+	display: table-cell;
+	width: 33%;
+}
+footer .footer-content .container section h3 {
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 4px 0;
+}
+footer .footer-content .container section ul {
+	text-transform: uppercase;
+	list-style: none;
+	padding-left: 8px;
+	margin: 0 0 8px 0;
+	font-size: 12px;
+	font-weight: 700;
+}
+footer .footer-content .container section ul li {
+	cursor: pointer;
+}
+footer .afterfooter {
+	width: 100%;
+	background:#AAA;
+	padding: 8px 0;
+}
+footer .afterfooter .left,
+footer .afterfooter .right {
+	width: 50%;
+}
+footer .afterfooter .left { float: left; }
+footer .afterfooter .right { float: right; }
