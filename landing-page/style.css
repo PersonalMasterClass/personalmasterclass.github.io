@@ -63,7 +63,7 @@ section#leader .container .section-content a.button {
 }
 section#subject-tiles {
 	background: #CCC;
-	padding-bottom: 24px;
+	padding: 8px 0;
 }
 section#subject-tiles .container .section-content > h1 {
 	text-align: center;
